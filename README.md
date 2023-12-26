@@ -4,16 +4,17 @@
 </p>
 
 ##
-
-<h2 align="center"> Descrição do Projeto </h2>
-
 <p align="center">
 	<img src="https://img.shields.io/badge/Vers%C3%A3o-.Net-blue">
 	<img src="https://img.shields.io/github/stars/williamWHC?style=social">
 </p>
 
+<h2 align="center"> Descrição do Projeto </h2>
+
+
 # LD-METODO.NET
-Repositório destinado a projetos e exercícios voltando a programação da plataforma de estudo Luiz Dev Método .NET
+Repositório destinado a projetos e exercícios voltando a programação da plataforma de estudo Luiz Dev Método .NET.
+ [LuizDev - Método.Net Direto ao Ponto](https://metododotnet.luisdev.com.br/).
 
 Projeto com o objetivo de evoluir com as seguintes skills.
 * Domain-Driven Design (DDD).
@@ -27,7 +28,6 @@ Projeto com o objetivo de evoluir com as seguintes skills.
 * Docker e Kubernetes.
 * CI/CD com Azure DevOps.
 * Observabilidade com Prometheus, Grafana e ElasticStack.
- [LuizDev - Método.Net Direto ao Ponto](https://metododotnet.luisdev.com.br/)
 
 ---
 
