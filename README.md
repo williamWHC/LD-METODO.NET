@@ -29,6 +29,8 @@ Projeto com o objetivo de evoluir com as seguintes skills.
 * CI/CD com Azure DevOps.
 * Observabilidade com Prometheus, Grafana e ElasticStack.
 
+Adicionar seções.
+
 ---
 
 ## Desenvolvedore
