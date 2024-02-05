@@ -4,27 +4,30 @@
     {
         static void Main(string[] args)
         {
+            #region Principais métodos e propriedades String
+
             string nome = "Rua Piacatu n° 9000";
 
-            //Length
+            //Length - comprimento da string
             int comprimento = nome.Length;
             Console.WriteLine($"Lenght: {comprimento}");
             //---------------
 
-            //Empty
+            //Empty - string vazia
             string emptyString = string.Empty;
+
             object emptyObject = string.Empty;
 
             Console.WriteLine($"Empty String: \"{emptyString}\"");
             Console.WriteLine($"Empty Object: \"{emptyObject}\"");
             //---------------
 
-            //toLower
+            //toLower - transforma todo o texto em minusculo
             string textoToLowerCase = nome.ToLower();
             Console.WriteLine($"toLower: {textoToLowerCase}");
             //---------------
             
-            //toUpper
+            //toUpper - transforma todo o texto em maiusculo
             string textoToUpperCase = nome.ToUpper();
             Console.WriteLine($"toUpper: {textoToUpperCase} ");
 
@@ -32,27 +35,29 @@
             char[] separador = { ' ' };
             string[] partes = nome.Split(separador);
             Console.WriteLine($"Split: {String.Join(',', partes)}");
+                
+
             //---------------
 
-            //Trim - 
+            //Trim - retira o espaço em branco no inicio e final da string
             string textoComEspaco = " William Lorenzo Bernardo ";
             char[] charParaRemover = { ' ', 'W' };
             string textoTrim = textoComEspaco.Trim(charParaRemover);
             Console.WriteLine($"Trim: {textoTrim}");
             
-            //TrimEnd
+            //TrimEnd - retira o espaço em branco do final da string
             string textoTrimEnd = "Stephane anjos";
             char[] charParaRemoverTrimEnd = { ' ', 's' };
             string texto = textoTrimEnd.TrimEnd(charParaRemoverTrimEnd);
             Console.WriteLine($"TrimEnd: {texto}");
 
-            //TrimStart
+            //TrimStart - retira o espaço no inicio da string.
             string sTrimStart = nome.TrimStart();
             //---------------
 
-            //IsNullOrWhileSpace
+            //IsNullOrWhileSpace - retorna um bool se a string for Null ou vazia.
             string stringNull = null;
-            string stringVazia = "";
+            string stringVazia = ""; 
             string stringComEspaco = "  ";
 
             bool strinNullWhileSpace = string.IsNullOrWhiteSpace(stringNull);
@@ -65,11 +70,34 @@
 
             //---------------
 
-            //Replace
+            //Replace - substitui um chat expecifico de um conjunto de string.
             string newTexto = "William";
             string novoTexto = newTexto.Replace('m', 'n');
             Console.WriteLine($" Replace: {novoTexto}");
 
+            #endregion
+
+            #region Principais métodos e propriedades para Buscas
+
+            string paragrafo = "C# é uma linguagem de progração fortimente tipada, podemos trabalhar com desenvolvimento Web, Desktop, Mobile, IoT. Sua versão mais recente é a C# 10 e o conjunto de bibliotécas .NET 8.";
+
+            var indexOF = paragrafo.IndexOf("C#"); 
+
+            var lastIndexOf = paragrafo.LastIndexOf("Web");
+
+            var startWith = paragrafo.StartsWith("C#");
+
+            var endWith = paragrafo.EndsWith("8.");
+
+            var substring1 = paragrafo.Substring(indexOF);
+            var substring2 = paragrafo.Substring(indexOF, lastIndexOf);
+
+            var contains = paragrafo.Contains("Mobile");
+            var containsTwo = paragrafo.Contains("mobile", StringComparison.OrdinalIgnoreCase);
+
+            Console.WriteLine(indexOF);
+
+            #endregion
         }
     }
 }
